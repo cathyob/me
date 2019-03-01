@@ -127,7 +127,7 @@ header.Swiped .Basic-Info * {
 }
 header.Swiped .Basic-Info h1 {
     font-size: 2.5rem;
-    min-width: 215px;
+    min-width: 225px;
 }
 header.Swiped .Basic-Info h3 {
     font-size: 1.75rem;
@@ -255,7 +255,7 @@ textarea, input {
 }
 .Thanks div:after {
     animation: sweep 3s linear infinite;
-    background: linear-gradient(-45deg, transparent, transparent, transparent, rgba(255,255,255,.7), transparent, transparent, transparent);
+    background: linear-gradient(-45deg, rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,.7), rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0));
     content: '';
     display: block;
     height: 100%;
