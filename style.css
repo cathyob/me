@@ -252,6 +252,7 @@ textarea, input {
 .Thanks div {
     font-family: 'Bad Script', 'Open Sans', sans-serif;
     font-size: 2rem;
+    overflow: hidden;
     padding: 3em 2em;
     position: relative;
 }
