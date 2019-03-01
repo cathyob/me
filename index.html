@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cathy O'Brien - Web Developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Open+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="embed.png"/>
+</head>
+
+<body>
+    <header class="Splash" id="splashHeader">
+        <span class="Basic-Info">
+            <h1>Cathy O'Brien</h1>
+            <h3>Web Developer</h3>
+            <p>Boston, MA</p>
+        </span>
+        <nav class="Social-Nav">
+            <a href="https://drive.google.com/file/d/1_7ZkAlOFuFcyc_XEJkXejW5ILP2D8Uun/view" class="Social-Item" target="_blank"><span  class="Social-Icon Download"></span></a>
+            <a href="https://github.com/cathyob" class="Social-Item" target="_blank"><span class="Social-Icon Github"></span></a>
+            <a href="https://www.linkedin.com/in/cathyob/" class="Social-Item" target="_blank"><span  class="Social-Icon LinkedIn"></span></a>
+            <a href="https://twitter.com/cathyobrien09" class="Social-Item" target="_blank"><span  class="Social-Icon Twitter"></span></a>
+            <a href="https://www.instagram.com/cathyobrien09/" class="Social-Item" target="_blank"><span  class="Social-Icon Instagram"></span></a>
+        </nav>
+    </header>
+    <div class="Content">
+        <section>
+            <span class="Me"><span></span></span>
+            <p>My name is Cathy and I am a transplant from Texas that moved to Boston on a whim in 2015 for change and adventure! I've set down roots, cheer for (almost) all the Boston teams, and am part of the leadership teams for the Boston chapters of Women Who Code and Tech Ladies.</p>
+            <p>I picked up HTML and CSS in high school and used it as a hobby for 3-4 years. After 7 years in the insurance industry I decided to kickstart a career in web development so I enrolled in a web developer boot camp. Following 'graduation' in April 2017, I began working as a front end engineer with a digital marketing company.</p>
+            <p>Web development gives me the chance to do something creative and fulfilling, and provides the opportunity for continual growth and creativity that I was looking for in my career.</p>
+            <p>Please feel free to reach out if you have any questions, want to work together or discuss an available opportunity, or just to say "hi"!</p>
+        </section>
+        <section class="Skills">
+            <div>
+                <span class="Skill-Item Html">HTML5</span>
+                <span class="Skill-Item Css">CSS</span>
+                <span class="Skill-Item Flexbox">Flexbox</span>
+                <span class="Skill-Item Sass">SASS</span>
+                <span class="Skill-Item Jquery">jQuery</span>
+                <span class="Skill-Item JavaScript">JavaScript</span>
+                <span class="Skill-Item React">React</span>
+                <span class="Skill-Item Node">Node</span>
+                <span class="Skill-Item Git">Git</span>
+                <span class="Skill-Item Responsive">Responsive Web</span>
+            </div>
+        </section>
+        <section class="Tools">    
+            <div>
+                <span class="Skill-Item Github">Github</span>
+                <span class="Skill-Item Sourcetree">Sourcetree</span>
+                <span class="Skill-Item Jira">JIRA</span>
+                <span class="Skill-Item Confluence">Confluence</span>
+                <span class="Skill-Item Scrum">Scrum</span>
+            </div>
+        </section>
+        <section class="Contact">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsmMz6nQfGniK3UDU3A3VMYCFpOI9VdskYQ9LjLmg0HidIrQ/formResponse?embedded=true" method="POST" id="mG61Hd" target="_blank">
+                <h2>Say hello!</h2>
+                <h4>Send me a note:</h4>
+
+                <label for="name">Your name:</label>
+                <input name="entry.1724471281" type="text" id="name"/>
+
+                <label for="topic">What do you want to talk about?</label>
+                <textarea name="entry.203370310" id="topic"/></textarea>
+
+                <label for="contact">How do I contact you?</label>
+                <input name="entry.1307322450" type="text" id="contact"/>
+
+                <input class="Button" type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="Thanks">
+            <div>
+                <h2>Thanks for stopping by!</h2>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script>
+    const splash = document.querySelector("#splashHeader");
+    window.addEventListener("load", function() {
+        // 1.5 seconds after window loads hide the splashHeader
+        setTimeout(function(){
+            splash.classList.add("Swiped");
+        }, 1500);
+    });
+</script>
+
+</html>
