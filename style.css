@@ -46,6 +46,7 @@ header {
 }
 .Social-Nav {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     flex: 100%;
     position: absolute;
@@ -62,9 +63,17 @@ header {
 .Social-Item:hover {
     background: #b0f1ea;
     border-color: #b0f1ea;
+    color: #04868E !important;
 }
 .Social-Item:hover .Social-Icon {
     filter: invert(1);
+}
+.Social-Item.Resume {
+    border-radius: 5px;
+    color: white;
+    font-size: .8em;
+    margin-left: .5rem;
+    text-decoration: none;
 }
 .Social-Icon {
     background-position: center !important;
@@ -74,10 +83,6 @@ header {
     height: .8em;
     transition: .3s;
     width: .8em;
-}
-.Social-Icon.Download {
-    background: url(download3.svg);
-    background-position: .25px center !important;
 }
 .Social-Icon.Github {
     background: url(github1.svg);
@@ -129,14 +134,13 @@ header.Swiped .Basic-Info * {
     margin-top: calc(4rem + 2.75rem);
     min-width: 87px;
 }
-header.Swiped .Basic-Info h1 {
-    font-size: 2.5rem;
-    min-width: 225px;
+header.Swiped .Basic-Info h1,
+header.Swiped .Basic-Info h3 {
+    transform: translate(-2.75rem,0%) scale(.7);
 }
 header.Swiped .Basic-Info h3 {
-    font-size: 1.75rem;
     margin-top: 3.25rem;
-    min-width: 205px;
+    transform: translate(-2.2rem,0%) scale(.7);
 }
 header.Swiped .Basic-Info p {
     margin-top: calc(3.25rem + 2.55rem);
@@ -285,6 +289,9 @@ textarea, input {
     .Social-Item {
         margin: 0 6px;
     }
+    .Social-Item.Resume {
+        margin-left: 6px;
+    }
     header.Swiped .Basic-Info * {
         left: 50%;
         transform: translate(-50%,-50%);
@@ -292,17 +299,35 @@ textarea, input {
     header.Swiped .Basic-Info {
         margin-top: 4.5em;
     }
-    header.Swiped .Basic-Info h1 {
-        min-width: 240px;
+    header.Swiped .Basic-Info h1,
+    header.Swiped .Basic-Info h3 {
+        transform: translate(-50%,-50%) scale(.7);
+    }
+    header.Swiped .Basic-Info h3 {
+        margin-top: 2.75rem;
+    }
+    header.Swiped .Basic-Info p {
+        margin-top: calc(2.75rem + 1.75rem);
     }
     .Basic-Info {
         min-height: calc(100vh - 8em);
         text-align: center;
     }
+    .Basic-Info h1,
+    .Basic-Info h3 {
+        transform: translate(-50%,0%) scale(1);
+    }
     .Basic-Info h1 {
         min-width: 320px;
     }
+    .Basic-Info h3 {
+        margin-top: 4.25rem;
+        transform: translate(-50%,0%) scale(1);
+    }
+    .Basic-Info p {
+        margin-top: calc(4rem + 3.75rem);;
+    }
     .Me {
-        margin: 7em auto 2em;
+        margin: 6em auto 2em;
     }
 }
