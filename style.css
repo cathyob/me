@@ -286,14 +286,14 @@ textarea, input {
         margin-top: 4.5em;
     }
     header.Swiped .Basic-Info h1 {
-        min-width: 235px;
+        min-width: 240px;
     }
     .Basic-Info {
         min-height: calc(100vh - 8em);
         text-align: center;
     }
     .Basic-Info h1 {
-        min-width: 315px;
+        min-width: 320px;
     }
     .Me {
         margin: 7em auto 2em;
