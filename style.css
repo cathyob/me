@@ -285,9 +285,15 @@ textarea, input {
     header.Swiped .Basic-Info {
         margin-top: 4.5em;
     }
+    header.Swiped .Basic-Info h1 {
+        min-width: 235px;
+    }
     .Basic-Info {
         min-height: calc(100vh - 8em);
         text-align: center;
+    }
+    .Basic-Info h1 {
+        min-width: 315px;
     }
     .Me {
         margin: 7em auto 2em;
