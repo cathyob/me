@@ -107,6 +107,7 @@ header.Swiped .Basic-Info {
     min-height: 0;
 }
 .Basic-Info * {
+    color: white;
     margin: 0;
     position: absolute;
     top: 50%;
