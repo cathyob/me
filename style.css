@@ -225,8 +225,10 @@ textarea, input {
     border: 1px solid white;
     border-radius: 5px;
     color: white;
+    font-family: 'Open Sans', sans-serif;
     line-height: 2em;
     padding: 3px;
+    -webkit-appearance: none;
     width: 100%;
 }
 .Button {
