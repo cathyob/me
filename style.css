@@ -298,7 +298,7 @@ textarea, input {
     bottom: 0;
 }
 .Alert span {
-    background: url('cross.svg');
+    background: url('images/icons/cross.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
