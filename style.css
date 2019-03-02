@@ -281,6 +281,30 @@ textarea, input {
         left: 100%;
     }
 }
+
+.Alert {
+    background: rgba(255,24,88,.8);
+    border-radius: 5px;
+    margin: 2em;
+    padding: 2em 3em 2em 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.Alert span {
+    background: url('cross.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: .7em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: .7em;
+}
+.Alert span:hover {
+    cursor: pointer;
+}
 @media only screen and (max-width: 767px) {
     .Social-Nav {
         right: auto;

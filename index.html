@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Open+Sans:400,700" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="embed.png"/>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -68,7 +69,7 @@
                 <label for="contact">How do I contact you?</label>
                 <input name="entry.1307322450" type="text" id="contact"/>
 
-                <input class="Button" type="submit" value="Submit">
+                <input class="Button" type="button" value="Submit" onclick="submitForm()" id="submitbtn">
             </form>
         </section>
         <section class="Thanks">
@@ -77,16 +78,7 @@
             </div>
         </section>
     </div>
+    <div class="Alert" hidden id="alertModal" onclick="hideAlert()"><span></span><h3>Please fill in some info for your inquiry!</h3></div>
 </body>
-
-<script>
-    const splash = document.querySelector("#splashHeader");
-    window.addEventListener("load", function() {
-        // 1.5 seconds after window loads hide the splashHeader
-        setTimeout(function(){
-            splash.classList.add("Swiped");
-        }, 1500);
-    });
-</script>
 
 </html>
