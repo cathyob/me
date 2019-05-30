@@ -220,8 +220,10 @@ section div {
     margin: 3em auto;
 }
 form {
+    background: white;
     border: 2px solid white;
     border-radius: 5px;
+    color: #058289;
     margin: 0 auto;
     padding: 2em;
     max-width: 460px;
@@ -237,9 +239,8 @@ label {
 }
 textarea, input {
     background: none;
-    border: 1px solid white;
+    border: 1px solid #058289;
     border-radius: 5px;
-    color: white;
     font-family: 'Open Sans', sans-serif;
     line-height: 2em;
     padding: 3px;
@@ -247,8 +248,8 @@ textarea, input {
     width: 100%;
 }
 .Button {
-    background: white;
-    color: #04868E;
+    background: #058289;
+    color: white;
     display: inline-block;
     font-size: 1em;
     font-weight: 700;
@@ -259,7 +260,7 @@ textarea, input {
 }
 .Button:hover {
     background: none;
-    color: white;
+    color: #058289;
     cursor: pointer;
 }
 
