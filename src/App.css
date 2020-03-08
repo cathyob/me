@@ -1,5 +1,5 @@
 section {
-    padding: 2.5rem;
+    padding: 1rem;
 }
 .flex {
     display: flex;
@@ -9,13 +9,11 @@ section {
     font-family: 'Bad Script', sans-serif;
 }
 .Social-Nav {
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
     flex: 100%;
     position: absolute;
-    right: 2em;
-    top: 2em;
+    right: 1rem;
+    top: 1rem;
 }
 .Social-Item, .Button {
     border: 2px solid black;
@@ -25,19 +23,21 @@ section {
     padding: 5px;
     transition: .3s
 }
-.Social-Item:hover, .Button:hover {
-    background: #2a8ea5;
-    border-color: #2a8ea5;
-    color: #ccf5f0 !important;
+.Social-Item:hover, .Button:hover:not(.active) {
     cursor: pointer;
+}
+.Social-Item:hover, .Button:hover:not(.active), .Button.active {
+    background: rgba(70, 38, 146, .5);
+    border-color: transparent;
+    color: white !important;
 }
 .Social-Item:hover .Social-Icon {
     filter: invert(1);
 }
 .Button {
     border-radius: 5px;
-    font-size: 1.2em;
-    line-height: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     margin-left: .5rem;
     text-decoration: none;
 }
@@ -46,15 +46,42 @@ section {
     background-repeat: no-repeat !important;
     background-size: contain !important;
     display: block;
-    height: 1.2em;
+    height: 1.2rem;
     transition: .3s;
-    width: 1.2em;
+    width: 1.2rem;
+}
+.Me {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: block;
+    height: 10rem;
+    margin: 4rem auto 2rem;
+    padding: 5px;
+    position: relative;
+    width: 10rem;
+}
+.Me img {
+    border-radius: 50%;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: .7s;
+    max-width: 10rem;
+    transform: translate3d(0, 0, 0);
+}
+.Me img.Active {
+    opacity: 1;
 }
 .desc {
     padding: 2.5rem 0 0;
 }
 .desc:not(.show) {
     display: none;
+}
+.Skill-Section {
+    margin-top: 16px;
 }
 .skills {
     list-style-type: none;
@@ -63,5 +90,5 @@ section {
 }
 .skills li {
     display: inline-block;
-    margin: 0 4px;
+    margin: 8px 4px;
 }

@@ -8,6 +8,6 @@ export default class ButtonLink extends Component {
     }
 
     render() {
-        return <a className={["Button", !!this.props.classList ? this.props.classList : ''].join(' ')} href={this.props.href} target={this.props.target} onClick={this.processClick}>{this.props.text}</a>;
+        return <a className={["Button", !!this.props.classList ? this.props.classList : '', this.props.active ? 'active' : ''].join(' ')} href={this.props.href} target={this.props.target} onClick={this.processClick}>{this.props.text}</a>;
     }
 }
