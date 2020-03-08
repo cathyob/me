@@ -46,7 +46,7 @@ class App extends Component {
             <Icon url="https://www.linkedin.com/in/cathyob/" className="Social-Item" classList="Social-Icon LinkedIn" background={require('./resources/images/icons/linkedin2.svg')} ariaLabel="LinkedIn" />
             <Icon url="https://twitter.com/cathyobrien09" className="Social-Item" classList="Social-Icon Twitter" background={require('./resources/images/icons/twitter.svg')} ariaLabel="Twitter" />
             <Icon url="https://www.instagram.com/cathyobrien09/" className="Social-Item" classList="Social-Icon Instagram" background={require('./resources/images/icons/instagram.svg')} ariaLabel="Instagram" />
-            <ButtonLink href="https://drive.google.com/file/d/1fms91hh-gan3NadAv9FrUIu5yJ3HMmpj/" classList="Resume" target="_blank" text="Resume"></ButtonLink>
+            <ButtonLink href="https://drive.google.com/file/d/1rRx24-9_VCV0aHWZ8e4DbRrCh-Iwgv_w/" classList="Resume" target="_blank" text="Resume"></ButtonLink>
           </nav>
           <Panel>
             <div className="Me" id="photoSlider">
